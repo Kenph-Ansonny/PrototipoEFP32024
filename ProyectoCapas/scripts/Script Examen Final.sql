@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS usuario (
   PRIMARY KEY (id_usuario) )
 ENGINE = InnoDB CHARACTER SET = latin1;
 
-CREATE TABLE maestros
+CREATE TABLE pacientes
 (
   id_paciente VARCHAR(5),
   nombre_paciente VARCHAR(45),

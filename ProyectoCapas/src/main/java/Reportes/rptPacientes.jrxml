@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="07e62d91-a082-4756-9e01-7bbe271aa2d0">
+	<queryString language="SQL">
+		<![CDATA[SELECT *FROM pacientes]]>
+	</queryString>
+	<field name="id_paciente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombre_paciente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="apellido_paciente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="genero_paciente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="direccion_paciente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telefono_paciente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="estatus_paciente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="172" y="48" width="168" height="20" uuid="5af9a31b-6f75-4049-ae99-e61d02c0171d"/>
+				<textElement>
+					<font fontName="Monospaced" size="13"/>
+				</textElement>
+				<text><![CDATA[Reporte Pacientes]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="66" height="20" uuid="bfcef826-fb68-4181-a265-b6943d2ca202"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="66" y="0" width="78" height="20" uuid="d2e59124-6994-4738-b237-24d3c6c035be"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Nombre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="144" y="0" width="85" height="20" uuid="0b25eb76-9f74-44f8-b87b-575c06b7bbf7"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Apellido]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="229" y="0" width="83" height="20" uuid="d2bcdb56-86f5-4767-99c3-16db4bfeb56a"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Genero]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="312" y="0" width="100" height="20" uuid="5ead497a-8856-4b09-99df-883161e39a86"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Direccion]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="412" y="0" width="89" height="20" uuid="7fe2f303-f6c0-47dd-8109-d0a4e5356a70"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Telefono]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="501" y="0" width="54" height="20" uuid="c8793f9c-8cf3-4996-a16e-ba4d1975845f"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Estatus]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="55" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="7" width="66" height="20" uuid="73c52198-133f-4ab3-8e8a-f227886cea60"/>
+				<textFieldExpression><![CDATA[$F{id_paciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="66" y="7" width="78" height="20" uuid="e572bde1-dd6c-4ac4-8fe0-57ef20d715eb"/>
+				<textFieldExpression><![CDATA[$F{nombre_paciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="144" y="7" width="85" height="20" uuid="b7d20ee8-140e-4e91-87c9-6944325fa03b"/>
+				<textFieldExpression><![CDATA[$F{apellido_paciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="229" y="7" width="83" height="20" uuid="2a8dc2d8-bbbc-4183-b817-44f4e5190651"/>
+				<textFieldExpression><![CDATA[$F{genero_paciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="312" y="7" width="100" height="20" uuid="f885e0e2-e1b9-460d-ae22-331e1138a659"/>
+				<textFieldExpression><![CDATA[$F{direccion_paciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="412" y="7" width="89" height="20" uuid="394fe6c6-804e-49d6-86fd-7d0261abc64f"/>
+				<textFieldExpression><![CDATA[$F{telefono_paciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="501" y="7" width="54" height="20" uuid="d653bf50-3692-452d-a8cf-58dac6c0fb96"/>
+				<textFieldExpression><![CDATA[$F{estatus_paciente}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
