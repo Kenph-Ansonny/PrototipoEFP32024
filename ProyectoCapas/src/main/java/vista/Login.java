@@ -8,12 +8,13 @@ package vista;
 import modelo.UsuarioDAO;
 import controlador.Usuario;
 import java.awt.HeadlessException;
-
+import controlador.clsUsuarioConectado;
+import controlador.clsBitacora;
 import javax.swing.JOptionPane;
 
 /**
  *
- * @author visitante
+ * @author kenph
  */
 public class Login extends javax.swing.JFrame {
 
@@ -140,7 +141,11 @@ public class Login extends javax.swing.JFrame {
 
                 if (txtContraseña.getText().equals(usuarioAConsultar.getPassword()) && txtUsuario.getText().equals(usuarioAConsultar.getUsername())) {
                     JOptionPane.showMessageDialog(null, "Bienvenido al SISTEMA\n", "Mensaje de bienvenida", JOptionPane.INFORMATION_MESSAGE);
-
+                    clsUsuarioConectado usuarioRegistrado = new clsUsuarioConectado();
+                    usuarioRegistrado.setIdUsuario(usuarioAConsultar.getId_usuario());
+                    usuarioRegistrado.setNombreUsuario(usuarioAConsultar.getUsername());
+                    clsBitacora Auditoria = new clsBitacora();
+                    Auditoria.setIngresarBitacora(usuarioAConsultar.getId_usuario(), 1000, "LGI");
                     MdiGeneral menuGeneral = new MdiGeneral();
                     menuGeneral.setVisible(true);
                     this.dispose();

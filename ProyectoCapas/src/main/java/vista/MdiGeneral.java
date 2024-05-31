@@ -20,7 +20,7 @@ public class MdiGeneral extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         this.setExtendedState(MdiGeneral.MAXIMIZED_BOTH);
-        this.setTitle("Ejemplo Capas");
+        this.setTitle("Examen Final - 9959-22-6326 Kenph Luna");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
 
